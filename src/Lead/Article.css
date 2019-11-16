@@ -1,0 +1,71 @@
+.articlePage{
+   display: inline-block;
+   position: absolute;
+   top: 11%;
+   left: 0;
+   width: 100%;
+   height: 1500px;
+   background: white;
+   padding-left: 5%; 
+   padding-right: 5%;
+   
+   
+}
+.articlePage>p{
+    padding: 1%;
+    
+}
+.articlePhoto{
+    width: 70%;
+    margin-left: 17%;
+    height: 275px;
+    object-position: bottom
+    
+}
+
+.articlePage>p>b{
+    font-size: 28px;
+    
+    
+}
+.articleList>li{
+    display: block
+}
+
+.backButton{
+    background-color:tan;
+    border-radius: 35px;
+    border: 0;
+    color: black;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    width: 70px;
+    margin-top: 8px;
+    padding-top: 3px;
+}
+
+.backButton:active, .backButton:focus, .backButton:hover{
+    outline: none
+}
+.buttonLink{
+    text-decoration: none;
+    
+}
+.backButton:hover{
+    color: white
+}
+.articleHeader{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -60px;
+    text-align: center
+}
+.content{
+    padding: 0;
+    margin: 0;
+}

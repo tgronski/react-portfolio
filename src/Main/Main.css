@@ -1,0 +1,49 @@
+.container{
+    text-align: center;
+    width: 100%;
+    padding: 18px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    overflow: scroll !important;
+
+}
+.side{
+   position: absolute;
+   top: 0%;
+   left: 0;
+   width: 16%;
+   margin: 1%;
+   /* height: 600px;
+   border: black solid 2px; */
+   
+}
+.side>p{
+    margin: 5%
+}
+.bio{
+    text-align: left
+}
+.mainPage{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.img-banner{
+   
+    width: 100%;
+    padding-bottom: 5%;
+    margin-top: 25%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+   height: 300px;
+   width: 400px;
+   object-fit: cover;
+
+}

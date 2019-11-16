@@ -1,0 +1,57 @@
+.projects{
+   background: white;
+   display: grid;
+   grid-template-rows: auto auto auto;
+   grid-template-columns: auto auto auto;
+  
+}
+.winephoto{
+width: 370px;
+height: auto;
+}
+.parkphoto{
+    width: 375px;
+    height: auto;
+}
+.projectList>li{
+    display: block;
+}
+
+.project1{
+    grid-row: 1;
+    grid-column: 3;
+}
+.title{
+    color:black;
+    font-size: 22px;
+}
+.description{
+    display: block;
+    width: 375px;
+    text-align: center;
+}
+.project2{
+    grid-row: 1;
+    grid-column: 2;
+} 
+.project3{
+    grid-row: 1;
+    grid-column: 1;
+
+    
+} 
+.description>p,.description>ul{
+    text-align: initial;
+}
+
+.description>a{
+    color: black;
+}
+.projectPage{
+    margin-top: 3%;
+     display: flex; 
+    /* justify-content: center;
+    align-content: center;
+    width: 100%;  */
+    
+}

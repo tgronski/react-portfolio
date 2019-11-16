@@ -1,0 +1,71 @@
+.background-color{
+    background: tan;
+    width: 100%;
+    
+}
+
+h1{
+    margin-top: 0;
+    font-size: 60px;
+    margin-bottom: 1%;
+    color: white;
+    position: relative;
+}
+
+nav>ul{
+    display: flex;
+    list-style-type:none;
+    position: absolute;
+    left: 0; 
+    
+    /* left: -38%; */
+}
+
+
+
+li{
+    margin-top: 2%;
+    list-style-type: none;
+    
+}
+
+
+.banner>ul>li>.a{
+    border: none;
+    background: none;
+}
+
+.a{
+    display: inline;
+    color: white;
+    font-size: 20px;
+   
+}
+
+.routerLink{
+    text-decoration: none;
+    margin-right: 10px
+}
+.routerLink>.a:hover{
+    /* color: rgb(179, 208, 220); */
+    color:black;
+}
+#nav-leader{
+    background-color: tan;
+    text-align: left;
+    padding: 5px;
+    width: 125px;
+    position: fixed;
+    z-index: 1;
+ 
+}
+h3{
+    font-size: 16px;
+    color: white;
+    margin: 5px
+    
+}
+.dropDownLink{
+    text-decoration: none; 
+
+}
