@@ -19,7 +19,6 @@ export default class App extends Component{
   }
   
 
-
   renderNavRoutes(){
     
     return(
@@ -59,7 +58,12 @@ export default class App extends Component{
 
 
   render(){
-  
+    const queryString = require('query-string');
+    const params = queryString.parse(document.location.search);
+    const redirect = params.redirect; // this would be "abcdefg" if the query was "?redirect=abcdefg"
+    if (document.location.pathname === '/' && redirect) {
+      document.location.assign(`${document.location.origin}/${redirect}`);
+    }
   return (
    
     <div className="App" >
@@ -69,15 +73,15 @@ export default class App extends Component{
       </header>
       <div className='body'>
       <main>{this.renderMainPage()}</main>     
+    
+      
+    
       </div>
       <Footer />
     </div>
    
   );
-  }
-  
 }
 
-
-
+}
 

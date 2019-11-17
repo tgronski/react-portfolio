@@ -1,5 +1,5 @@
 {
-  "name": "blogger",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "alias": "tessgronski-portfolio-app",
   "private": true,
@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "now --prod ./build"
+    "deploy": "now --prod"
   },
   "eslintConfig": {
     "extends": "react-app"
