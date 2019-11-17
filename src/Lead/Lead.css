@@ -38,3 +38,9 @@
 display: block;
 
 }
+.articleImgLoader{
+    margin:0;
+    height: 300px;
+    width: 400px;
+    background-color: tan  
+}
