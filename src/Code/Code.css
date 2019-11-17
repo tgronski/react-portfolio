@@ -3,7 +3,7 @@
    display: grid;
    grid-template-rows: auto auto auto;
    grid-template-columns: auto auto auto;
-  
+   grid-gap: 30px;
 }
 .winephoto{
 width: 370px;
@@ -20,6 +20,7 @@ height: auto;
 .project1{
     grid-row: 1;
     grid-column: 3;
+    
 }
 .title{
     color:black;
@@ -49,9 +50,11 @@ height: auto;
 }
 .projectPage{
     margin-top: 3%;
-     display: flex; 
-    /* justify-content: center;
+    display: flex; 
+    justify-content: center;
     align-content: center;
-    width: 100%;  */
+    width: 100%; 
+    position: fixed;
+    left: 0
     
 }

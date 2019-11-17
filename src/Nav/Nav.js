@@ -28,7 +28,7 @@ export default class Nav extends Component{
                     <ul className='mainNav'> 
                     <li ><Link className='routerLink' to= '/home' ><h2 className='a'>Home</h2></Link> </li>
                         <li ><Link className='routerLink' to='/code' ><h2 className='a' >Code</h2></Link></li>
-                        <li><Link className='routerLink'  to='/leadership' onMouseOver={this.handleLead} ><h2 className='a' >Leadership</h2> </Link>
+                        <li><Link className='routerLink'  to='/leadership' onMouseEnter={this.handleLead} ><h2 className='a' >Leadership</h2> </Link>
                         {
                                         this.state.showLead
                                     ?(
