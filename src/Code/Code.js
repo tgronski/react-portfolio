@@ -27,6 +27,7 @@ export default class Code extends Component {
                 <ul className='projectList'>Technologies Used: 
                     <li>Javascript</li>
                     <li>jQuery</li>
+                    <li>HTML/CSS</li>
                 </ul>
             </section>
             </section>
