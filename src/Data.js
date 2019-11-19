@@ -1,5 +1,5 @@
 import leadership from './Lead/leadership.jpg'
-import computer from './Lead/computer.jpg'
+import computersmall from './Lead/computersmall.jpg'
 import React from 'react';
 
 export default{
@@ -40,7 +40,7 @@ export default{
                         'author': 'Tess Gronski ',
                         'date': 'Nov 3',
                         'read': '3 min read',
-                        'img': computer,
+                        'img': computersmall,
                         'original': "Originally published at https://dev.to on November 3, 2019.",
                         'content1': <p>As a woman looking to break into tech (and a career changer), I am always on the lookout for helpful & motivating resources. There are so many inclusive, welcoming people and organizations in tech! Learning to code is already challenging. It's important to have tons of great resources you can turn to for help!
                         <br/>

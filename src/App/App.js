@@ -32,7 +32,6 @@ export default class App extends Component{
     )
   }
   renderMainPage(){
-    console.log(this.state.lead)
     return(
       <span>
       {['/', '/home'].map(path => (
@@ -68,9 +67,11 @@ export default class App extends Component{
    
     <div className="App" >
       <header className="App-header">
+      <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"/>
       <nav>{this.renderNavRoutes()}</nav>
-      <Link className='nav' className='routerLink' to='/' ><h1>Tess Gronski</h1></Link>
       </header>
+      <Link className='nav' className='routerLink' to='/' ><h1 id='appTitle'>business(engineer)</h1></Link>
+
       <div className='body'>
       <main>{this.renderMainPage()}</main>     
     

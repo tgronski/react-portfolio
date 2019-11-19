@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import '../Engineers.css'
-import quizapp from './quiz-app.png'
+import quizapp from './quizapp.png'
 import './Code.css'
 import ParkApp from './ParkApp.png'
 import noteful from './noteful.png'

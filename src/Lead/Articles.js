@@ -3,7 +3,6 @@ import './Article.css'
 import { Link } from 'react-router-dom';
 import Data from '../Data.js'
 
-
 export default class Articles extends Component {
     constructor(props){
         super(props)
@@ -23,7 +22,7 @@ export default class Articles extends Component {
         return(
             <section className="articlePage">
            
-            <Link to='/leadership' class='buttonLink' ><button class='backButton'>All Articles</button></Link>
+            <Link to='/leadership' class='buttonLink' ><button class='backButton'>All <br/>Posts</button></Link>
             <span class='articleHeader'>
             <p><b class='title'>{Data.articles[0][i].title}</b>
             <br/>
@@ -34,7 +33,7 @@ export default class Articles extends Component {
             <br/>
             
             <img className='articlePhoto' src={Data.articles[0][i].img} alt='article'></img>
-
+            <p className='credits'>Image is from Sandra at HerCreativeStudio.com</p>
             <p class='content'>{Data.articles[0][i].content1}  
             <br/>
             <br/>

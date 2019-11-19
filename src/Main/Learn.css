@@ -31,7 +31,8 @@
     margin-top: -26%;
     margin-right: -28%;
     font-family: 'Playfair Display', serif;
-    background:rgba(210, 180, 140, 0.75);
+    /* background:rgba(210, 180, 140, 0.75); */
+    background: navy;
     padding: 3%;
     color: white;
     margin-bottom: 7%

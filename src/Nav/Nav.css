@@ -1,31 +1,21 @@
-.background-color{
-    background: tan;
-    width: 100%;
-    
-}
 
-h1{
-    margin-top: 0;
-    font-size: 60px;
-    margin-bottom: 1%;
-    color: white;
-    position: relative;
-}
-
-nav>ul{
+.mainNav{
+   
     display: flex;
-    list-style-type:none;
-    position: absolute;
-    left: 0; 
-    
-    /* left: -38%; */
+    justify-content: space-between;
+    align-content: space-between;
+    padding-left: 15px;
+    width: 250px
 }
 
 
 
-li{
-    margin-top: 2%;
-    list-style-type: none;
+.mainNav>li,.nav-leader>li{
+
+    list-style-type:none;
+    
+    display: inline-block;
+
     
 }
 
@@ -33,6 +23,7 @@ li{
 .banner>ul>li>.a{
     border: none;
     background: none;
+
 }
 
 .a{
@@ -44,25 +35,27 @@ li{
 
 .routerLink{
     text-decoration: none;
-    margin-right: 10px
 }
 .routerLink>.a:hover{
     /* color: rgb(179, 208, 220); */
-    color:black;
+    color:gainsboro;
 }
 #nav-leader{
-    background-color: tan;
+    background-color: navy;
     text-align: left;
     padding: 5px;
     width: 125px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
+    top: 45px;
+    
  
 }
 h3{
     font-size: 16px;
     color: white;
-    margin: 5px
+    margin: 5px;
+  
     
 }
 .dropDownLink{
