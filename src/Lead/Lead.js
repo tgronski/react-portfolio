@@ -20,8 +20,9 @@ export default class Lead extends Component {
         return(
             <LazyLoad once offset={100} height={300}>
             <section className="leadPage"> 
-            <span className='contain'>      
-            <section className='leadNotes'> <p>I love studying and practicing different leadership styles. I am most passionate about constructive feedback, career coaching, and performance management. </p></section>
+            <span className='contain'>  
+            <br/>    
+            {/* <section className='leadNotes'> <p>I love studying and practicing different leadership styles. I am most passionate about constructive feedback, career coaching, and performance management. </p></section> */}
             <section className='articles'>
                 <Link  to='/leadership/1' ><Img src={leadership} alt='desktop'loader={<p className='articleImgLoader'></p>}></Img> <br/><b >An Actionable Guide to Managing Introverts</b></Link>
                 <p>Aug 18, 2019 ||  3 min Read</p>
