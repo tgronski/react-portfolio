@@ -70,7 +70,7 @@ export default class App extends Component{
       <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"/>
       <nav>{this.renderNavRoutes()}</nav>
       </header>
-      <Link className='nav' className='routerLink' to='/' ><h1 id='appTitle'>tess gronski</h1></Link>
+      <Link className='nav' className='routerLink' to='/' ><h1 id='appTitle'>business(engineer)</h1></Link>
 
       <div className='body'>
       <main>{this.renderMainPage()}</main>     
