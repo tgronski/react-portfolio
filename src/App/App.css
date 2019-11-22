@@ -29,7 +29,6 @@ main{
 header{
     top: 0; 
     width: 100%; 
-    background: navy;
     display: flex;
     
 }
@@ -53,3 +52,7 @@ h1{
    
 }
 
+header{
+    background: rgb(1, 1, 114);
+   
+}

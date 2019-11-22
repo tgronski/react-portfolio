@@ -12,11 +12,13 @@ footer{
 
 }
 .social, a:link,a:visited {
-    color: navy;
     font-size: 22px;
     border: none;
     outline: none;
 
+}
+.social, a:link,a:visited{
+ color: rgb(1, 1, 114);
 }
 a:hover{
     color: black;
