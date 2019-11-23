@@ -25,12 +25,14 @@ a:hover{
 }
 .socialIcons{
     margin-top: 1% ;
-    width: 30%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding:0;
+    overflow: hidden;
+
 }
 
 
