@@ -1,51 +1,37 @@
 .container{
     text-align: center;
-    width: 100%;
-    padding: 18px;
-    position: absolute;
-    left: 0;
-    top: 10%;
-    overflow: scroll !important;
+    width: 100vw;
+    height: auto;
+    padding: 2%  
+}
 
-}
-.side{
-   position: absolute;
-   top: 0%;
-   left: 0;
-   width: 16%;
-   margin: 1%;
-   /* height: 600px;
-   border: black solid 2px; */
-   
-}
 .side>p{
     margin: 5%
 }
 .bio{
-    text-align: left
+    text-align: left;
 }
-.mainPage{
-    
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    
+
+.img-banner>p{
+    display: inline-block;
 }
 
 .img-banner{
-   
-    width: 100%;
-    padding-bottom: 5%;
-    margin-top: 20%; 
-    display: flex;
-    justify-content: space-evenly;
+   overflow-x: scroll;
+   height: 350px;
+ 
+   overflow-y: scroll; 
+   white-space: nowrap;
+   width: 100%;
+ 
+ 
 }
-img{
-   height: 300px;
+.photo-style1>Img,.photo-style2>Img,.photo-style3>Img{
+   height: 300px ;
    width: 400px;
-   object-fit: cover;
-
+   padding: 2%;
+   
+   
 }
 .mainImgLoader{
     margin:0;

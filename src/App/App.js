@@ -11,12 +11,7 @@ import Articles from '../Lead/Articles'
 
 
 export default class App extends Component{
-  constructor(props){
-    super(props)
-    this.state={
-    
-    }
-  }
+
   
 
   renderNavRoutes(){
@@ -67,10 +62,13 @@ export default class App extends Component{
    
     <div className="App" >
       <header className="App-header">
+      
       <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"/>
+      
       <nav>{this.renderNavRoutes()}</nav>
+      <Link className='nav' to='/' ><h1  >business(engineer)</h1></Link>   
       </header>
-      <Link className='nav' className='routerLink' to='/' ><h1 id='appTitle'>business(engineer)</h1></Link>
+      
 
       <div className='body'>
       <main>{this.renderMainPage()}</main>     

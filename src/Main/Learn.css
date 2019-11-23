@@ -1,11 +1,22 @@
 .learn-code{
     font-size: 28px;
     font-family: 'Playfair Display', serif;
-    margin-top: 2%;
-    margin-bottom: 15%;
-    margin-left: -55%;
     color: rgb(157, 155, 155);
+    margin-top:6%
+    
+}
+.bottom-banner{
+    text-align: center;
+    
+    width: 100%;
+    overflow-y: visible;
+    padding-bottom: 20%
+    
+}
 
+.largeScreen{
+    display: flex;
+    justify-content: space-evenly
 }
 
 .wave {
@@ -26,14 +37,12 @@
     100% { transform: rotate(  0.0deg) }
 }
 .quote{
-    display: inline-block;
     font-size: 34px;
-    margin-top: -26%;
-    margin-right: -28%;
     font-family: 'Playfair Display', serif;
-    /* background:rgba(210, 180, 140, 0.75); */
     background: rgb(1, 1, 114);
-    padding: 3%;
     color: white;
-    margin-bottom: 7%
+    padding: 20px;
+    text-align: center
+
+    
 }

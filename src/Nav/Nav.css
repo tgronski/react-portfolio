@@ -1,36 +1,28 @@
 
-.mainNav{
-   
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    padding-left: 15px;
-    width: 250px
+li{
+    display: inline-block;  
+    margin-right: 1%;
+  
+
 }
-
-
 
 .mainNav>li,.nav-leader>li{
 
     list-style-type:none;
     
-    display: inline-block;
-
-    
 }
 
 
-.banner>ul>li>.a{
+banner>ul>li>.a{
     border: none;
     background: none;
 
 }
 
 .a{
-    display: inline;
+   
     color: white;
     font-size: 20px;
-   
 }
 
 .routerLink{
@@ -61,4 +53,10 @@ h3{
 .dropDownLink{
     text-decoration: none; 
 
+}
+
+ul{
+    margin-left: -80%;
+    padding-top: -1.8%;
+   
 }

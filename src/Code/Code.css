@@ -6,11 +6,11 @@
    grid-gap: 30px;
 }
 .winephoto{
-width: 370px;
+max-width: 370px;
 height: auto;
 }
 .parkphoto{
-    width: 375px;
+    max-width: 375px;
     height: auto;
 }
 .projectList>li{
@@ -28,7 +28,7 @@ height: auto;
 }
 .description{
     display: block;
-    width: 375px;
+    max-width: 375px;
     text-align: center;
 }
 .project2{
@@ -48,13 +48,28 @@ height: auto;
 .description>a{
     color: black;
 }
-.projectPage{
-    margin-top: 3%;
+.projectPage{   
     display: flex; 
     justify-content: center;
     align-content: center;
     width: 100%; 
-    position: fixed;
-    left: 0
+    padding: 3%;
     
+}
+.projectsColumn{
+    display: block;
+    text-align: center;
+    width: 100%; 
+}
+.projectsColumn>.project{
+    display: block; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.projectsColumn>.description{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

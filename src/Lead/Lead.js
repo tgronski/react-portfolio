@@ -8,12 +8,7 @@ import Img from 'react-image';
 import LazyLoad from 'react-lazyload'
 
 export default class Lead extends Component {
-    constructor(props){
-        super(props)
-        this.state={
-       
-        }
-    }
+
   
 
     render(){

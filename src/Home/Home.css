@@ -1,13 +1,21 @@
 
 .homePage{
-padding-left: 10%;
-text-align: start;
-
-
+    padding-left: 10%;
+    text-align: start;
+    /* display: flex; */
+    height: 300px;
+    background: white;
+    width: 100%;
+    top: 10%
 }
 
 .engineerPage{
     margin-top: 2%;
-    display: flex;
+    /* display: block; */
+
     
+}
+.page{
+    height: auto;
+    overflow: visible
 }
