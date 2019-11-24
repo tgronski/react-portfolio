@@ -18,7 +18,7 @@ export default class App extends Component{
     
     return(
       <span>
-      <Route exact path='/' component={Nav} />
+      <Route exact path='/' component={()=><Nav pageWrapId={"page-wrap"} outerContainerId={"App"}/>}/>
       <Route path='/home' component={Nav}/>
       <Route path= "/tech" component={Nav} />
       <Route path= "/leadership" component={Nav} />
@@ -64,13 +64,13 @@ export default class App extends Component{
       <header className="App-header">
       
       <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"/>
-      
+      <Link className='nav' to='/' ><h1  >business(engineer)</h1></Link>  
       <nav>{this.renderNavRoutes()}</nav>
-      <Link className='nav' to='/' ><h1  >business(engineer)</h1></Link>   
+       
       </header>
       
 
-      <div className='body'>
+      <div className='body' id="page-wrap">
       <main>{this.renderMainPage()}</main>     
     
       

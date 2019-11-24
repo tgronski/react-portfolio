@@ -23,8 +23,10 @@
 }
 .articles{
     display: inline-block;
-    margin-bottom: 0
-    
+    margin-bottom: 0;
+    /* max-width: 400px;
+    max-height: 500px;
+    overflow: hidden; */
 }
 .leadPage{
    display: flex;
@@ -33,8 +35,7 @@
    margin: 0;
    padding: 0;
    text-align: center;
-   position: absolute;
-
+  
 }
 .contain{
 display: block;
@@ -46,4 +47,14 @@ display: block;
     width: 400px;
     background-color:rgb(1, 1, 114);
    
+}
+.photo{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.photoSmall{
+    max-width: 300px;
+    max-height: 200px;
 }

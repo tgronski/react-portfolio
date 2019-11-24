@@ -16,7 +16,7 @@
     
 }
 .articlePhoto{
-    width: 70%;
+    width: 65%;
     margin-left: 17%;
     height: 275px;
     object-position: bottom
@@ -74,4 +74,18 @@
     margin: 0; 
     padding: 0;
     font-size: 14px
+}
+.articlePhotoSmall{
+    max-width: 300px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-left:5% ;
+    max-height: 200px;
+}
+.buttonLinkSmall{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20%
 }
