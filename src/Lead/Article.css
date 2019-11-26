@@ -1,8 +1,5 @@
 .articlePage{
-   display: inline-block;
-   position: absolute;
-   top: 14%;
-   left: 0;
+
    width: 100%;
    height: auto;
    background: white;
@@ -11,6 +8,7 @@
    padding-top: 2%;
    margin-bottom: 20%;
    margin-top: 0;
+   z-index: -2;
    
 }
 .articlePage>p{
@@ -45,7 +43,6 @@
     border-radius: 40px;
     border: 0;
     color: white;
-    display: block;
     font-size: 18px;
     font-weight: bold;
     height: 75px;
