@@ -52,7 +52,7 @@ export default{
                         I highly recommend these two groups (remote & local) for under-represented people in tech!
                         <br/>
                         <ul className='articleList'>
-                        <li> -Tech Ladies</li>   
+                        <li>-Tech Ladies</li>
                         <li>-Women Who Code</li>
                         <li>-Write/Speak/Code</li>
                         <li>-This Dot Media</li>
@@ -92,8 +92,9 @@ export default{
                         <br/>
                         Twitter:
                         <ul className='articleList'></ul>
-                        <li>@WellPaidGeek</li>
-                        <li>@moshhamedani</li>
+                        @WellPaidGeek
+                        <br/>
+                        @moshhamedani
                         <ul/>
                         Do you have any suggestions for more code newbie resources? I'd love to add to my list!
                         </p>

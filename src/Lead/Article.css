@@ -9,7 +9,7 @@
    padding-left: 5%; 
    padding-right: 5%;
    padding-top: 2%;
-   margin-bottom: 5%
+   margin-bottom: 10%
    
 }
 .articlePage>p{
@@ -17,13 +17,16 @@
     
 }
 .articlePhoto{
-    width: 60%;
-    max-height: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+}
+
+.articlePhoto>img{
+    width: 500px;
+    height: 300px;
     object-position: bottom;
-    object-fit: scale-down;
-    margin-left: auto;
-    margin-right: auto;
-    
+    object-fit: cover;
 }
 
 .articlePage>p>b{
@@ -31,8 +34,9 @@
     
     
 }
-.articleList>li{
-    display: block
+.articleList>ul{
+    color: chartreuse;
+    margin-left:100 !important;
 }
 
 .backButton{

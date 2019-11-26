@@ -85,7 +85,7 @@ export default class Nav extends Component{
             <button className='burgerIcon' onMouseEnter={this.handleDropDown}><FontAwesomeIcon  icon={faBars}/></button>
             {this.state.showDropDown
                 ?( 
-                    <Menu {...this.props}>
+                    // <Menu {...this.props}>
                     <ul className='navDropDownList' onMouseOver={this.handleDropDown} onMouseLeave={this.handleUnDrop}>
                     <li ><Link className="menu-item" to= '/home' ><h2 className='a'>Home </h2></Link></li>
                     <li><Link className="menu-item" to='/code' ><h2 className='a' >Code</h2></Link></li>
@@ -99,13 +99,14 @@ export default class Nav extends Component{
                             </ul>
                    
                   
-                )
-                :(null)
-                }
+                        )
+                        :(null)
+                    }
             
                 </li>
                 </ul>
-                </Menu>)
+                // </Menu>
+                )
                 :  null
             }
 

@@ -19,9 +19,9 @@ export default class Articles extends Component {
             ?(
             <section className="articlePage">
            
-            <Link to='/leadership' class='buttonLink' ><button class='backButton'>All <br/>Posts</button></Link>
-            <span class='articleHeader'>
-            <p><b class='title'>{Data.articles[0][i].title}</b>
+            <Link to='/leadership' className='buttonLink' ><button class='backButton'>All <br/>Posts</button></Link>
+            <span className='articleHeader'>
+            <p><b className='title'>{Data.articles[0][i].title}</b>
             <br/>
             
             {Data.articles[0][i].author}
@@ -29,9 +29,9 @@ export default class Articles extends Component {
             </span>
             <br/>
             
-            <img className='articlePhoto' src={Data.articles[0][i].img} alt='article'></img>
+            <div className='articlePhoto'><img  src={Data.articles[0][i].img} alt='article'></img></div>
             <p className='credits'>Image is from Sandra at HerCreativeStudio.com</p>
-            <p class='content'>{Data.articles[0][i].content1}  
+            <p className='content'>{Data.articles[0][i].content1}  
             <br/>
             <br/>
             {Data.articles[0][i].original}           
@@ -42,8 +42,8 @@ export default class Articles extends Component {
                 <section className='buttonLinkSmall'>
                 <Link to='/leadership'  className='buttonLink' ><button class='backButton'>All <br/>Posts</button></Link>
                 </section>
-                <span class='articleHeader'>
-                <p><b class='title'>{Data.articles[0][i].title}</b>
+                <span className='articleHeader'>
+                <p><b className='title'>{Data.articles[0][i].title}</b>
                 <br/>
                 
                 {Data.articles[0][i].author}

@@ -33,15 +33,14 @@ banner>ul>li>.a{
     color:gainsboro;
 }
 #nav-leader{
-    /* background-color: rgb(1, 1, 114); */
+    background-color: rgb(1, 1, 114);
     text-align: left;
     padding: 5px;
     height: 100px;
-    position: fixed;     
+    position: absolute;     
     z-index: 1;
-    top: 0px;
-    background-color: lawngreen;
-    display: flex;
+    top: 10%;
+    display: block;
     
  
 }
@@ -57,11 +56,10 @@ h3,.burgerIcon{
 
 }
 
-ul{
+.navMenu{
     margin-left: -70%;
-    /* padding-top: -1.8%; */
     
-}
+} 
 .burgerIcon{
     margin-right: 90%;
     margin-top: 5%;
@@ -75,7 +73,6 @@ ul{
     padding: 5px;
     width: 125px;
     position: fixed; 
-    z-index: 200;
     color: white;
     height: 100px;
 }
