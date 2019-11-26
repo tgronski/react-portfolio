@@ -5,14 +5,6 @@ import Data from '../Data.js'
 import MediaQuery from 'react-responsive'
 
 export default class Articles extends Component {
-    constructor(props){
-        super(props)
-        this.state={
-          
-          
-        }
-    }
-   
 
 
     render(){

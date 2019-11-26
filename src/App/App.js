@@ -37,13 +37,14 @@ export default class App extends Component{
                     />
       ))}
       
-      <Route path= "/leadership" component={()=><Lead />} />
+      <Route exact path= "/leadership" component={()=><Lead />} />
       <Route path= "/code" component={()=><Code/>} />
 
       {['/leadership/:article'].map(path =>(
         <Route  
         exact
         key={path}
+        exact
         path={path} component={Articles}/>
         ))}
       </span>
