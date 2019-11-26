@@ -19,13 +19,15 @@
 .img-banner{
    overflow-x: scroll;
    height: 350px;
-   display: flex;
    overflow-y: scroll; 
    white-space: nowrap;
    width: 100%;
  
- 
 }
+::-webkit-scrollbar-thumb:horizontal {
+    height: 4px;             
+    border: 1px solid #d5d5d5;
+  }
 .photo-style1>Img,.photo-style2>Img,.photo-style3>Img{
    height: 300px ;
    width: 400px;

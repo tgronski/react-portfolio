@@ -85,27 +85,20 @@ export default class Nav extends Component{
             <button className='burgerIcon' onMouseEnter={this.handleDropDown}><FontAwesomeIcon  icon={faBars}/></button>
             {this.state.showDropDown
                 ?( 
-                    // <Menu {...this.props}>
                     <ul className='navDropDownList' onMouseOver={this.handleDropDown} onMouseLeave={this.handleUnDrop}>
                     <li ><Link className="menu-item" to= '/home' ><h2 className='a'>Home </h2></Link></li>
                     <li><Link className="menu-item" to='/code' ><h2 className='a' >Code</h2></Link></li>
-                    <li><Link  className="menu-item" to='/leadership' onMouseEnter={this.handleLead} ><h2 className='a' >Leadership</h2> </Link>
-                    {this.state.showLead
-                        ?(
-
-                            <ul id='nav-leader'onMouseOver={this.handleLead} onMouseLeave={this.handleUnhover} >
+                    <li><Link  className="menu-item" to='/leadership' ><h2 className='a' >Leadership</h2> </Link>
+                            <ul id='nav-leader'>
                             <li><Link className='dropDownLink'  to='/leadership/1' ><h3>Management</h3></Link></li>
                             <li><Link className='dropDownLink' to='/leadership/2' ><h3>Code Resources</h3></Link></li>
                             </ul>
                    
                   
-                        )
-                        :(null)
-                    }
-            
-                </li>
-                </ul>
-                // </Menu>
+
+                    </li>
+                    </ul>
+              
                 )
                 :  null
             }
