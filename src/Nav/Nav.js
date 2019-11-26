@@ -25,6 +25,7 @@ export default class Nav extends Component{
         this.setState({showLead: false})
     }
     handleDropDown=()=>{
+        console.log('bye')
         if(this.state.showDropDown===false){
             this.setState({showDropDown: true})
             }
@@ -82,7 +83,7 @@ export default class Nav extends Component{
             
             <nav role='banner'>                    
             <span className='mainNav'>
-            <FontAwesomeIcon className='burgerIcon' onMouseEnter={this.handleDropDown} icon={faBars}/>
+            <FontAwesomeIcon className='burgerIcon' onClick={this.handleDropDown} icon={faBars}/>
             {this.state.showDropDown
                 ?( 
                     <ul className='navDropDownList'>

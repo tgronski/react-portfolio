@@ -20,6 +20,7 @@ var d1 = new Date("05/11/2019");
 var timeDiff = d2.getTime() - d1.getTime();
 var DaysDiff = (timeDiff / (1000 * 3600 * 24)).toFixed(0);
 return(
+<div className='bottomMain'>
 <MediaQuery minDeviceWidth={1000}>
     {(matches) =>
         matches
@@ -34,6 +35,7 @@ return(
     </span>
     }
 </MediaQuery>
+</div>
 )
 
 }

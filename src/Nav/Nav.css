@@ -68,14 +68,20 @@ h3,.burgerIcon{
    color: gray
 }
 .navDropDownList{
-    background-color: rgb(1, 1, 114);
+    background-color: rgba(1, 1, 114, 0.783);
     text-align: left;
     padding: 5px;
-    width: 125px;
-    top: 10%;
+    width: 200px;
+    top: 8%;
     position: absolute; 
     color: white;
-    height: 100px;
+    height: 325px;
+}
+.burgerIcon{
+    margin-top: 15%;
+}
+.burgerIcon:checked{
+    color: white;
 }
 
 .menu-item {
