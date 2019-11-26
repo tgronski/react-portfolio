@@ -39,7 +39,7 @@ banner>ul>li>.a{
     height: 100px;
     position: absolute;     
     z-index: 1;
-    top: 10%;
+    top: 9.8%;
     display: block;
     
  
@@ -72,7 +72,7 @@ h3,.burgerIcon{
     text-align: left;
     padding: 5px;
     width: 125px;
-    position: fixed; 
+    position: absolute; 
     color: white;
     height: 100px;
 }

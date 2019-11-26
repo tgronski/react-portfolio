@@ -19,16 +19,16 @@ export default class Nav extends Component{
     }   
     handleLead=()=>{
         this.setState({showLead: true})
-        console.log('hi')
-
 
     }
     handleUnhover=()=>{
         this.setState({showLead: false})
     }
     handleDropDown=()=>{
-        this.setState({showDropDown: true})
-        console.log('hi')
+        if(this.state.showDropDown===false){
+            this.setState({showDropDown: true})
+            }
+            else this.setState({showDropDown: false})
     }
     handleUnDrop=()=>{
         this.setState({showDropDown: false})
@@ -82,16 +82,16 @@ export default class Nav extends Component{
             
             <nav role='banner'>                    
             <span className='mainNav'>
-            <button className='burgerIcon' onMouseEnter={this.handleDropDown}><FontAwesomeIcon  icon={faBars}/></button>
+            <FontAwesomeIcon className='burgerIcon' onMouseEnter={this.handleDropDown} icon={faBars}/>
             {this.state.showDropDown
                 ?( 
-                    <ul className='navDropDownList' onMouseOver={this.handleDropDown} onMouseLeave={this.handleUnDrop}>
+                    <ul className='navDropDownList'>
                     <li ><Link className="menu-item" to= '/home' ><h2 className='a'>Home </h2></Link></li>
                     <li><Link className="menu-item" to='/code' ><h2 className='a' >Code</h2></Link></li>
                     <li><Link  className="menu-item" to='/leadership' ><h2 className='a' >Leadership</h2> </Link>
-                            <ul id='nav-leader'>
-                            <li><Link className='dropDownLink'  to='/leadership/1' ><h3>Management</h3></Link></li>
-                            <li><Link className='dropDownLink' to='/leadership/2' ><h3>Code Resources</h3></Link></li>
+                            <ul >
+                            <li><Link className='menu-item'  to='/leadership/1' ><h3>Management</h3></Link></li>
+                            <li><Link className='menu-item' to='/leadership/2' ><h3>Code Resources</h3></Link></li>
                             </ul>
                    
                   
