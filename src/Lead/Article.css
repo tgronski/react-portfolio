@@ -1,7 +1,7 @@
 .articlePage{
    display: inline-block;
    position: absolute;
-   top: 11%;
+   top: 14%;
    left: 0;
    width: 100%;
    height: auto;
@@ -9,7 +9,7 @@
    padding-left: 5%; 
    padding-right: 5%;
    padding-top: 2%;
-   margin-bottom: 15%;
+   margin-bottom: 20%;
    margin-top: 0;
    
 }
