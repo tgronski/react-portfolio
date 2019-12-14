@@ -66,6 +66,7 @@ export default class Code extends Component {
             <ul className='projectList'>Technologies Used: 
                     <li>Javascript</li>
                     <li>jQuery</li>
+                    <li>HTML/CSS</li>
                 </ul>
             </section>
             </section>
@@ -74,7 +75,10 @@ export default class Code extends Component {
             <p>This was one of my first projects using React. Users can add new folders and notes to the notetaking app. They can also delete old notes. </p>
             <ul className='projectList'>Technologies Used: 
                     <li>Javascript</li>
+                    <li>HTML/CSS</li>
                     <li>React</li>
+                    <li>Express server</li>
+                    <li>Heroku</li>
             </ul>
             </section>
             </section>
