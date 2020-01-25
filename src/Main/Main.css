@@ -19,12 +19,32 @@
 .img-banner{
 
    height: 350px;
-   overflow-x: scroll; 
    white-space: nowrap;
    width: 100%;
  
 }
+.img-banner-mobile{
 
+    height: 350px;
+    overflow-x: scroll; 
+    white-space: nowrap;
+    width: 100%;
+ }
+ .img-banner-mobile::-webkit-scrollbar {
+        height:2%;
+
+      }
+       
+      .img-banner-mobile::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        
+      }
+       
+      .img-banner-mobile::-webkit-scrollbar-thumb {
+        background-color: rgb(1, 1, 114);
+        outline: 1px solid  rgb(1, 1, 114);
+        
+      }
 
 .photo-style1>Img,.photo-style2>Img,.photo-style3>Img{
    height: 300px ;
