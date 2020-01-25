@@ -1,9 +1,9 @@
 .projects{
    background: white;
    display: grid;
-   grid-template-rows: auto auto auto;
    grid-template-columns: auto auto auto;
    grid-gap: 30px;
+   text-align: center;
 }
 .winephoto{
     max-width: 350px;
@@ -15,17 +15,13 @@
 }
 
 
-.project1{
-    grid-row: 1;
-    grid-column: 3;
-    
-}
 .title{
     color:black;
     font-size: 22px;
 }
 .descriptionColumn{
     display: block;
+    
 }
 .descriptionColumn>a,.descriptionColumn>li{
     
@@ -33,21 +29,14 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    
 
 }
-.project2{
-    grid-row: 1;
-    grid-column: 2;
-} 
-.project3{
-    grid-row: 1;
-    grid-column: 1;
 
-    
-} 
 .description>p{
     text-align: initial;
     display: block;
+   
     
 }
 .projectList{

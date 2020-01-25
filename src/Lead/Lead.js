@@ -15,7 +15,7 @@ export default class Lead extends Component {
     render(){
         return(
             
-            <LazyLoad once offset={100} height={300}>
+            <LazyLoad  offset={100} height={300} >
             <MediaQuery minDeviceWidth={700} >
             {(matches) =>
              matches

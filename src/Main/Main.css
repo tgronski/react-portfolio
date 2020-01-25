@@ -17,7 +17,7 @@
 }
 
 .img-banner{
-   overflow-x: scroll;
+
    height: 350px;
    overflow-y: scroll; 
    white-space: nowrap;
@@ -36,8 +36,9 @@
 .mainImgLoader{
     margin:0;
     height: 300px;
-    width: 400px;
-    background-color: rgb(1, 1, 114)  
+    width: 300px;
+    background-color: rgb(1, 1, 114); 
+    z-index: 1;
 }
 
 
