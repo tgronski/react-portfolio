@@ -19,7 +19,7 @@
 .img-banner{
 
    height: 350px;
-   overflow-y: scroll; 
+   overflow-x: scroll; 
    white-space: nowrap;
    width: 100%;
  
