@@ -1,15 +1,15 @@
-import React from 'react'
+// import React from 'react'
 
 
 
 
-class About extends React.Component {
+// class About extends React.Component {
  
 
-    render(){
+//     render(){
        
        
        
-    }
-}
-export default About;
+//     }
+// }
+// export default About;
