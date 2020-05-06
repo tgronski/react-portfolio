@@ -1,8 +1,5 @@
 .projects{
    background: white;
-   display: grid;
-   grid-template-columns: auto auto auto;
-   grid-gap: 30px;
    text-align: center;
 }
 .winephoto{
@@ -19,10 +16,7 @@
     color:black;
     font-size: 22px;
 }
-.descriptionColumn{
-    display: block;
-    
-}
+
 .descriptionColumn>a,.descriptionColumn>li{
     
 
@@ -34,8 +28,10 @@
 }
 
 .description>p{
-    text-align: initial;
+    text-align: center;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
    
     
 }
@@ -57,7 +53,8 @@
     
 }
 .projectsColumn{
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 78%; 
 }

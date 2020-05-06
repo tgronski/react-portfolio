@@ -19,3 +19,9 @@
     height: auto;
     overflow: visible
 }
+
+.welcome{
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(157, 155, 155); 
+}

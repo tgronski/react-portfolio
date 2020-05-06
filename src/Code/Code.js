@@ -16,7 +16,7 @@ export default class Code extends Component {
         return(
             
             
-            <MediaQuery minDeviceWidth={1400}>
+            <MediaQuery minDeviceWidth={900}>
             {(matches) =>
              matches
             ? (<section className='projectPage'><section className='projects'>
