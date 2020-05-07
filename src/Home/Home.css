@@ -16,8 +16,8 @@
 
 
 .page{
-    height: auto;
-    overflow: visible
+    height: 100vh;
+    overflow: visible;
 }
 
 .welcome{

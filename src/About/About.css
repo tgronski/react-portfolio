@@ -1,0 +1,19 @@
+.About{
+    text-align: center;
+    background-color: rgb(157, 155, 155); ;
+}
+
+.About-me{
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    color: white
+}
+.About-description{
+    width: 60%;
+    height:auto;
+    margin-bottom: 13%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    color: rgb(1, 1, 114);
+}

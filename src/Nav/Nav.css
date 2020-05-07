@@ -1,8 +1,7 @@
 .navMenu>li{
     display: inline-block;  
     margin-right: 1%;
-    margin-top: .6%;
-
+    margin-top: 5%;
 }
 
 .mainNav>li,.nav-leader>li{
@@ -12,16 +11,22 @@
 }
 
 
+.navMenu>li>.a{
+    font-size: 60px;
+    font-family: 'Rubik Mono One', sans-serif;    
+    color:  gray;
+    text-decoration: none;
+    -webkit-text-stroke: white 3px;
+
+}
+
+
 banner>ul>li>.a{
     border: none;
 
 }
 
-.a{
-   
-    color: white;
-    font-size: 20px;
-}
+
 
 .routerLink{
     text-decoration: none;
@@ -35,11 +40,10 @@ banner>ul>li>.a{
 #nav-leader{
     background-color: rgb(1, 1, 114);
     text-align: left;
-    padding: 5px;
     height: 100px;
+    width: 300px;
     position: absolute;     
-    z-index: 2;
-    top: 70px;
+    z-index: 3;
     display: block;
    
     
@@ -58,8 +62,9 @@ h3,.burgerIcon{
 }
 
 .navMenu{
-    margin-left: -70%;
-    
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px
 } 
 .burgerIcon{
     margin-right: 90%;
@@ -88,9 +93,7 @@ h3,.burgerIcon{
 
 .menu-item {
     display: inline-block;
-  
-    /* Our sidebar item styling */
-    text-decoration: none;
+      text-decoration: none;
     margin-bottom: 10px;
     color: #d1d1d1;
     transition: color 0.2s;

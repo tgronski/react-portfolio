@@ -55,7 +55,7 @@ display: block;
     width: 400px;
     height: 300px;
     object-fit: cover;
- 
+    border: 6px solid rgb(1, 1, 114)
 }
 
 .photoSmall{

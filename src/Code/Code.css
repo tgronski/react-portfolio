@@ -3,14 +3,17 @@
    text-align: center;
 }
 .winephoto{
-    max-width: 350px;
+    max-width: 500px;
     height: auto;
 }
 .parkphoto{
-    max-width: 350px;
+    max-width: 450px;
     height: auto;
 }
-
+.networthphoto{
+    max-width: 450px;
+    height: auto;
+}
 
 .title{
     color:black;

@@ -65,7 +65,7 @@ export default class App extends Component{
       <header className="App-header">
       
       <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"/>
-      <Link className='nav' to='/' ><h1  >tess gronski</h1></Link>  
+      {/* <Link className='nav' to='/' ><h1  >tess gronski</h1></Link>   */}
       <nav>{this.renderNavRoutes()}</nav>
        
       </header>
