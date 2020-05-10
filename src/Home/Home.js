@@ -21,7 +21,7 @@ export default class Home extends Component {
             <section className='homePage'>
                 <p > <i className="welcome"> Welcome! </i>
                 <br/>  <br/>
-                My name is Tess Gronski. I am a developer with one year of Javascript experience. I also have a business background in finance, leadership, and e-Commerce. </p>
+                Hi, I'm Tess Gronski. I am a Bay Area developer with one year of Javascript experience. I also have a business background in finance, leadership, and e-Commerce. </p>
             </section>
                <Main />
                <About/>

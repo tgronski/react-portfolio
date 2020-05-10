@@ -44,8 +44,7 @@ banner>ul>li>.a{
 #nav-leader{
     background-color: rgb(1, 1, 114);
     text-align: left;
-    height: 100px;
-    width: 300px;
+    width: 325px;
     position: absolute;     
     z-index: 3;
     display: block;
@@ -90,7 +89,7 @@ banner>ul>li>.a{
     top: 70px;
     position: absolute; 
     color: white;
-    height: 325px;
+    height: 250px;
     margin: 0;
 }
 .burgerIcon{

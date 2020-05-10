@@ -9,9 +9,7 @@ return(
     <footer>
        <section className="corner" >
             <ul className="socialIcons">
-            
-                <li className="social" ><a href="https://twitter.com/tcgronk" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter}/></a></li>
-                <li className="social" ><a href="https://tailorandchief.com/" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faShoppingBag}/></a></li>  
+                    <li className="social" ><a href="https://tailorandchief.com/" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faShoppingBag}/></a></li>  
                 <li className="social"><a href="https://www.linkedin.com/in/therese-tess-gronski/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn}/></a></li>  
                 <li className="social"><a href="https://github.com/tcgronk" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a></li>      
                 <li className="social"><a href="https://dev.to/tcgronk" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faDev}/></a></li>      
