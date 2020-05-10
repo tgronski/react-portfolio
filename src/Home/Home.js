@@ -19,7 +19,7 @@ export default class Home extends Component {
         return(
             <section className='page'>
             <section className='homePage'>
-                <p > <i className="welcome"> Welcome! </i>
+                <p className='bio'> <i className="welcome"> Welcome! </i>
                 <br/>  <br/>
                 Hi, I'm Tess Gronski. I am a Bay Area developer with one year of Javascript experience. I also have a business background in finance, leadership, and e-Commerce. </p>
             </section>
