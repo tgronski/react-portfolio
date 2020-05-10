@@ -49,7 +49,7 @@ constructor(props){
                    : <p className='articleImgLoader'></p>}
                    <p>Nov 3, 2019 ||  3 min Read</p>
                 </section>
-                <p className='leadQuote'>“If you want to build a ship, don’t herd people together to collect wood and don’t <br/> assign them tasks and work, but rather teach them to long for the endless immensity of the sea.” <br/>-Antoine de Saint-Exupery<br/>---<br/><br/></p>
+                <p className='leadQuote'>“If you want to build a ship, don’t herd people together to collect wood and don’t <br/> assign them tasks and work, but rather teach them to long for the endless immensity of the sea.” <br/>-Antoine de Saint-Exupery<br/><br/><br/></p>
                 </span>
                 </section>)
             :(<section className="leadPage"> 

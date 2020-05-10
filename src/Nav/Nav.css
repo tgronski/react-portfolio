@@ -14,12 +14,19 @@
 .navMenu>li>.a{
     font-size: 60px;
     font-family: 'Rubik Mono One', sans-serif;    
-    color:  gray;
+    color:  rgb(230, 230, 240);
     text-decoration: none;
     -webkit-text-stroke: white 3px;
 
 }
 
+#noline{
+    text-decoration: none !important;
+    font-size: 60px;
+    font-family: 'Rubik Mono One', sans-serif;    
+    color:  rgb(230, 230, 240);
+    -webkit-text-stroke: white 3px;
+}
 
 banner>ul>li>.a{
     border: none;
@@ -28,15 +35,12 @@ banner>ul>li>.a{
 
 
 
-.routerLink{
-    text-decoration: none;
-
+.navMenu>li>.a:hover, .dropDownLink>h3:hover{
+    text-decoration: line-through;
+    text-decoration-color: rgb(1, 1, 114);
 
 }
-.routerLink>.a:hover{
-    /* color: rgb(179, 208, 220); */
-    color:gainsboro;
-}
+
 #nav-leader{
     background-color: rgb(1, 1, 114);
     text-align: left;
@@ -49,29 +53,34 @@ banner>ul>li>.a{
     
  
 }
-h3,.burgerIcon{
+.burgerIcon{
     font-size: 16px;
     color: white;
     margin: 5px;
   
     
 }
-.dropDownLink{
+.dropDownLink>h3{
     text-decoration: none; 
-
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+.dropDownLink{
+    text-decoration: none;
 }
 
 .navMenu{
     display: flex;
     flex-direction: row;
-    margin-top: 60px
 } 
 .burgerIcon{
     margin-right: 90%;
     margin-top: 5%;
 }
 .burgerIcon:hover{
-   color: gray
+   color: rgb(230, 230, 240)
 }
 .navDropDownList{
     background-color: rgba(1, 1, 114, 0.783);

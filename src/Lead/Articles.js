@@ -9,8 +9,6 @@ export default class Articles extends Component {
 
     render(){
         for(let i=0; i<Data.articles.length+1; i++){
-            console.log(this.props.match.params.article)
-            console.log(Data.articles[0][i].article)
         if(this.props.match.params.article===Data.articles[0][i].article){
         return(
             <MediaQuery minDeviceWidth={700} >
