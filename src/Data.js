@@ -2,6 +2,64 @@ import leadership from './Lead/leadership.jpg'
 import computersmall from './Lead/computersmall.jpg'
 import React from 'react';
 
+let article=<span>As a woman looking to break into tech (and a career changer), I am always on the lookout for helpful & motivating resources. There are so many inclusive, welcoming people and organizations in tech! Learning to code is already challenging. It's important to have tons of great resources you can turn to for help!
+<br/>
+<br/>
+Disclaimer: Not all of these resources are marketed as "inclusive." However, based on my research and/or personal experience, these resources are great for any under-represented individuals looking to break into tech!
+<br/>
+<br/>
+Organizations:
+I highly recommend these two groups (remote & local) for under-represented people in tech!
+<br/>
+<ul className='articleList'>
+<li>-Tech Ladies</li>
+<li>-Women Who Code</li>
+<li>-Write/Speak/Code</li>
+<li>-This Dot Media</li>
+<li>-Tech Inclusion</li>
+<li>-Techtonica</li>
+<li>-General Assembly</li>
+<li>-Include.io</li>
+</ul>
+<br/>
+Podcasts:
+I've found a few podcasts that were not inclusive (i.e. using the pronouns he/him/his to describe hypothetical developers, career advice that if you apply enough you'll just fall into a tech career, etc). These podcasts, however, are inclusive, high quality, and share motivating stories.
+<br/>
+<ul className='articleList'>
+<li>-Code Newbie</li>
+<li>-Learn to Code With Me</li>
+<li>-The Free Code Camp Podcast</li>
+<li>-Front End Happy Hour</li>
+<li>-This Dot Media Fempire</li>
+<li>-Command Line Heroes</li>
+<li>-The Ladybug Podcast</li>
+</ul>
+<br/>
+Online resources:
+<br/>
+<ul className='articleList'>
+<li>-Free Code Camp</li>
+<li>-Programming With Mosh</li>
+<li>-Code Academy</li>
+<li>-100 Days of Code</li>
+</ul>
+<br/>
+Conferences:
+<br/>
+<br/>
+-Write/Speak/Code Conference is probably the most inclusive place on earth
+<br/>
+<br/>
+Twitter:
+<ul className='articleList'></ul>
+@WellPaidGeek
+<br/>
+@moshhamedani
+<ul/>
+Do you have any suggestions for more code newbie resources? I'd love to add to my list!
+</span>
+
+
 export default{
     'articles':[{
                    
@@ -36,62 +94,7 @@ export default{
                         'read': '3 min read',
                         'img': computersmall,
                         'original': "Originally published at https://dev.to on November 3, 2019.",
-                        'content1': <p>As a woman looking to break into tech (and a career changer), I am always on the lookout for helpful & motivating resources. There are so many inclusive, welcoming people and organizations in tech! Learning to code is already challenging. It's important to have tons of great resources you can turn to for help!
-                        <br/>
-                        <br/>
-                        Disclaimer: Not all of these resources are marketed as "inclusive." However, based on my research and/or personal experience, these resources are great for any under-represented individuals looking to break into tech!
-                        <br/>
-                        <br/>
-                        Organizations:
-                        I highly recommend these two groups (remote & local) for under-represented people in tech!
-                        <br/>
-                        <ul className='articleList'>
-                        <li>-Tech Ladies</li>
-                        <li>-Women Who Code</li>
-                        <li>-Write/Speak/Code</li>
-                        <li>-This Dot Media</li>
-                        <li>-Tech Inclusion</li>
-                        <li>-Techtonica</li>
-                        <li>-General Assembly</li>
-                        <li>-Include.io</li>
-                        </ul>
-                        <br/>
-                        Podcasts:
-                        I've found a few podcasts that were not inclusive (i.e. using the pronouns he/him/his to describe hypothetical developers, career advice that if you apply enough you'll just fall into a tech career, etc). These podcasts, however, are inclusive, high quality, and share motivating stories.
-                        <br/>
-                        <ul className='articleList'>
-                        <li>-Code Newbie</li>
-                        <li>-Learn to Code With Me</li>
-                        <li>-The Free Code Camp Podcast</li>
-                        <li>-Front End Happy Hour</li>
-                        <li>-This Dot Media Fempire</li>
-                        <li>-Command Line Heroes</li>
-                        <li>-The Ladybug Podcast</li>
-                        </ul>
-                        <br/>
-                        Online resources:
-                        <br/>
-                        <ul className='articleList'>
-                        <li>-Free Code Camp</li>
-                        <li>-Programming With Mosh</li>
-                        <li>-Code Academy</li>
-                        <li>-100 Days of Code</li>
-                       </ul>
-                        <br/>
-                        Conferences:
-                        <br/>
-                        <br/>
-                        -Write/Speak/Code Conference is probably the most inclusive place on earth
-                        <br/>
-                        <br/>
-                        Twitter:
-                        <ul className='articleList'></ul>
-                        @WellPaidGeek
-                        <br/>
-                        @moshhamedani
-                        <ul/>
-                        Do you have any suggestions for more code newbie resources? I'd love to add to my list!
-                        </p>
+                        'content1': article
                     }
     }]
 

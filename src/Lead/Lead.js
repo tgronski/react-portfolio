@@ -22,7 +22,7 @@ export default class Lead extends Component {
   }
   componentWillUnmount() {
     this._mounted = false;
-
+    
     clearTimeout();
   }
 

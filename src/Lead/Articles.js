@@ -9,10 +9,10 @@ export default class Articles extends Component {
     for (let i = 0; i < Data.articles.length + 1; i++) {
       if (this.props.match.params.article === Data.articles[0][i].article) {
         return (
-          <MediaQuery minDeviceWidth={700}>
+          <MediaQuery key={i} minDeviceWidth={700}>
             {matches =>
               matches ? (
-                <section className="articlePage">
+                <section  className="articlePage">
                   <Link to="/leadership" className="buttonLink">
                     <button className="backButton">
                       All <br />
@@ -35,18 +35,18 @@ export default class Articles extends Component {
                   <p className="credits">
                     Image is from Sandra at HerCreativeStudio.com
                   </p>
-                  <p className="content">
+                  <span className="content">
                     {Data.articles[0][i].content1}
                     <br />
                     <br />
                     {Data.articles[0][i].original}
-                  </p>
+                  </span>
                 </section>
               ) : (
                 <section className="articlePage">
                   <section className="buttonLinkSmall">
                     <Link to="/leadership" className="buttonLink">
-                      <button class="backButton">
+                      <button className="backButton">
                         All <br />
                         Posts
                       </button>
@@ -67,12 +67,12 @@ export default class Articles extends Component {
                   <p className="credits">
                     Image is from Sandra at HerCreativeStudio.com
                   </p>
-                  <p className="content">
+                  <span className="content">
                     {Data.articles[0][i].content1}
                     <br />
                     <br />
                     {Data.articles[0][i].original}
-                  </p>
+                  </span>
                 </section>
               )
             }
