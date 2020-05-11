@@ -14,16 +14,16 @@ function Learn() {
     mm = "0" + mm;
   }
   today = mm + "/" + dd + "/" + yyyy;
-  var d2 = new Date(today);
-  var d1 = new Date("05/11/2019");
-  var timeDiff = d2.getTime() - d1.getTime();
-  var DaysDiff = (timeDiff / (1000 * 3600 * 24)).toFixed(0);
+  let d2 = new Date(today);
+  let d1 = new Date("05/11/2019");
+  let timeDiff = d2.getTime() - d1.getTime();
+  let DaysDiff = (timeDiff / (1000 * 3600 * 24)).toFixed(0);
   return (
     <div className="bottomMain">
       <MediaQuery minDeviceWidth={1000}>
         {matches =>
           matches ? (
-            <span className="bottom-banner" className="largeScreen">
+            <span className="largeScreen">
               <p className="learn-code">
                 <span role="img" aria-label="wave-emoji" className="wave">
                   👋

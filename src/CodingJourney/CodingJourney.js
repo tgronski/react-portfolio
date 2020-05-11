@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./CodingJourney.css";
-import Nav from "../Nav/Nav"
 export default class CodingJourney extends Component {
   render() {
-    return (<section className="CodingJourney">
+    return (
+      <section className="CodingJourney">
         <p className="CodingJourney-bio">
-          <b className='CodingJourney-title'>My Coding Journey:</b>
+          <b className="CodingJourney-title">My Coding Journey:</b>
           <br />
           <br />
           My favorite class in college was Computer Science, and I've always

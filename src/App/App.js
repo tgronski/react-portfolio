@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import Home from '../Home/Home'
@@ -33,6 +33,7 @@ export default class App extends Component{
                     <Route
                         exact
                         path={path}
+                        key={path}
                         component={()=><Home/>}
                     />
       ))}
@@ -41,11 +42,9 @@ export default class App extends Component{
       <Route exact path= "/code" component={()=><Code/>} />
 
       {['/leadership/:article'].map(path =>(
-        <Route  
+        <Route 
         exact
-        key={path}
-        exact
-        path={path} component={Articles}/>
+        path={path} key={path} component={Articles}/>
         ))}
       </span>
     )

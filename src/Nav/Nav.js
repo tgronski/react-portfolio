@@ -39,29 +39,28 @@ export default class Nav extends Component {
                 <span className="mainNav">
                   <ul className="navMenu">
                     <li>
-                      <Link className="routerLink" to="/home" className="a">
+                      <Link to="/home" className="a">
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link className="a" id="noline">
+                      <span className="a" id="noline">
                         /
-                      </Link>
+                      </span>
                     </li>
                     <li>
-                      <Link className="routerLink" to="/code" className="a">
+                      <Link to="/code" className="a">
                         Code
                       </Link>
                     </li>
                     <li>
-                      <Link className="a" id="noline">
+                      <span className="a" id="noline">
                         /
-                      </Link>
+                      </span>
                     </li>
 
                     <li>
                       <Link
-                        className="routerLink"
                         to="/leadership"
                         onMouseEnter={this.handleLead}
                         className="a"

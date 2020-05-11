@@ -14,11 +14,15 @@ export default class Lead extends Component {
     };
   }
   componentDidMount() {
-    if (this.state.image === false) {
+    this._mounted = true;
+
+    if (this.state.image === false && this._mounted) {
       setTimeout(() => this.setState({ image: true }), 1200);
     }
   }
   componentWillUnmount() {
+    this._mounted = false;
+
     clearTimeout();
   }
 

@@ -89,11 +89,12 @@ export default class Code extends Component {
         <MediaQuery minDeviceWidth={800}>
           {matches =>
             matches ? (
+                <>
               <section className="projects">
                 <section>
                   <a
                     href="https://github.com/tcgronk/networth-client"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer" 
                   >
                     <img
                       src={fisave}
@@ -108,7 +109,7 @@ export default class Code extends Component {
                     {this.state.showfinance ? (
                       <div className="arrow-down"></div>
                     ) : null}
-                    <p className="project-detail">
+                    <span className="project-detail">
                       This full stack project helps users track their networth
                       over time <br /> <br /> The PostgreSQL data is stored on
                       Heroku, and the app is deployed using Zeit.
@@ -122,13 +123,14 @@ export default class Code extends Component {
                         <li>Node.js</li>
                         <li>PostgreSQL</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
                 <section>
                   <a
                     href="https://github.com/tcgronk/sustainability"
                     target="_blank"
+                    rel="noopener noreferrer" 
                   >
                     <img
                       src={sustainability}
@@ -143,7 +145,7 @@ export default class Code extends Component {
                     {this.state.showsustainable ? (
                       <div className="arrow-down"></div>
                     ) : null}
-                    <p className="project-detail">
+                    <span className="project-detail">
                       This full stack project helps users find sustainable
                       stores in a variety of categories. <br /> <br /> The
                       PostgreSQL data is stored on Heroku, and the app is
@@ -157,13 +159,14 @@ export default class Code extends Component {
                         <li>Node.js</li>
                         <li>PostgreSQL</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
                 <section>
                   <a
                     href="https://github.com/tcgronk/Noteful-App"
                     target="_blank"
+                    rel="noopener noreferrer" 
                   >
                     <img src={noteful} className="notephoto" alt="quiz-app" />{" "}
                   </a>
@@ -174,7 +177,7 @@ export default class Code extends Component {
                     {this.state.shownotes ? (
                       <div className="arrow-down"></div>
                     ) : null}
-                    <p className="project-detail">
+                    <span className="project-detail">
                       This was one of my first projects using React. Users can
                       add new folders and notes to the notetaking app. They can
                       also delete old notes.{" "}
@@ -186,13 +189,14 @@ export default class Code extends Component {
                         <li>Express server</li>
                         <li>Heroku</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
                 <section>
                   <a
                     target="_blank"
                     href="https://github.com/tcgronk/outdoorApp"
+                    rel="noopener noreferrer" 
                   >
                     <img src={ParkApp} className="parkphoto" alt="quiz-app" />
                   </a>{" "}
@@ -203,7 +207,7 @@ export default class Code extends Component {
                     {this.state.showparks ? (
                       <div className="arrow-down"></div>
                     ) : null}
-                    <p className="project-detail">
+                    <span className="project-detail">
                       This was my first experience implementing data from
                       multiple APIs. Users can search for their state or a state
                       they want to travel to. Then, they will be provided with a
@@ -218,11 +222,11 @@ export default class Code extends Component {
                         <li>jQuery</li>
                         <li>HTML/CSS</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
                 <section>
-                  <a href="https://github.com/tcgronk/Quiz-App" target="_blank">
+                  <a href="https://github.com/tcgronk/Quiz-App" target="_blank" rel="noopener noreferrer" >
                     <img src={quizapp} className="winephoto" alt="quiz-app" />
                   </a>{" "}
                   <section className="description">
@@ -232,7 +236,7 @@ export default class Code extends Component {
                     {this.state.showquiz ? (
                       <div className="arrow-down"></div>
                     ) : null}
-                    <p className="project-detail">
+                    <span className="project-detail">
                       This was one of my first projects. I have a personal
                       interest in studying the wine industry, so I created a
                       wine quiz to test wine industry knowledge.
@@ -242,16 +246,144 @@ export default class Code extends Component {
                         <li>jQuery</li>
                         <li>HTML/CSS</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
               </section>
+                      <section className="second-section">
+                      {this.state.showfinance ? (
+                        <span className="project-detail-large">
+                          <a href="https://networth-client.now.sh" rel="noopener noreferrer"  target="_blank">
+                            <h3>Fisave</h3>
+                          </a>
+                          This full stack project helps users track their networth over time{" "}
+                          <br /> <br /> The PostgreSQL data is stored on Heroku, and the app
+                          is deployed using Zeit.
+                          <br /> <br />
+                          <span className="projectList">
+                            <a
+                              href="https://github.com/tcgronk/networth-client"
+                              target="_blank"
+                              rel="noopener noreferrer" 
+                            >
+                              Technologies Used:
+                            </a>
+                            <ul>
+                            <li>D3 for data visualizations</li>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>HTML/CSS</li>
+                            <li>Express.js</li>
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                            </ul>
+                          </span>
+                        </span>
+                      ) : null}
+            
+                      {this.state.showsustainable ? (
+                        <span className="project-detail-large">
+                          <a href="https://sustainability.now.sh" rel="noopener noreferrer"  target="_blank">
+                            <h3>Shop Sustainably</h3>
+                          </a>
+                          This full stack project helps users find sustainable stores in a
+                          variety of categories. <br /> <br /> The PostgreSQL data is stored
+                          on Heroku, and the app is deployed using Zeit.
+                          <br /> <br />
+                          <ul className="projectList">
+                            <a
+                              href="https://github.com/tcgronk/sustainability"
+                              target="_blank"
+                              rel="noopener noreferrer" 
+                            >
+                              Technologies Used:
+                            </a>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>HTML/CSS</li>
+                            <li>Express.js</li>
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                          </ul>
+                        </span>
+                      ) : null}
+                      {this.state.shownotes ? (
+                        <p className="project-detail-large">
+                          <a href="https://noteful-app-pi-seven.now.sh" rel="noopener noreferrer" target="_blank">
+                            <h3>Note Taking App</h3>
+                          </a>
+                          This was one of my first projects using React. Users can add new
+                          folders and notes to the notetaking app. They can also delete old
+                          notes. <br /> <br />
+                          <ul className="projectList">
+                            <a
+                              href="https://github.com/tcgronk/Noteful-App"
+                              target="_blank"
+                              rel="noopener noreferrer" 
+                            >
+                              Technologies Used:
+                            </a>
+                            <li>Javascript</li>
+                            <li>HTML/CSS</li>
+                            <li>React</li>
+                            <li>Express server</li>
+                            <li>Heroku</li>
+                          </ul>
+                        </p>
+                      ) : null}
+                      {this.state.showparks ? (
+                        <span className="project-detail-large">
+                          <a href="https://tcgronk.github.io/outdoorApp/" rel="noopener noreferrer" target="_blank">
+                            <h3>National Park Trip Planner</h3>
+                          </a>
+                          This was my first experience implementing data from multiple APIs.
+                          Users can search for their state or a state they want to travel
+                          to. Then, they will be provided with a description of National
+                          Parks in the state, the 3-day forecast in each park, and nearby
+                          restaurants and attractions. I used the National Parks API for the
+                          park information, Weatherbit API for the forecast, and the
+                          Foursquare API for the nearby attractions. <br /> <br />
+                          <ul className="projectList">
+                            <a href="https://github.com/tcgronk/outdoorApp" rel="noopener noreferrer" target="_blank">
+                              Technologies Used:
+                            </a>
+                            <li>Javascript</li>
+                            <li>jQuery</li>
+                            <li>HTML/CSS</li>
+                          </ul>
+                        </span>
+                      ) : null}
+                      {this.state.showquiz ? (
+                        <span className="project-detail-large">
+                          <a href="https://tcgronk.github.io/Quiz-App/" target="_blank" rel="noopener noreferrer" >
+                            <h3>Wine Industry Quiz</h3>
+                          </a>
+                          This was one of my first projects. I have a personal interest in
+                          studying the wine industry, so I created a wine quiz to test wine
+                          industry knowledge.
+                          <br />
+                          <br />
+                          <ul className="projectList">
+                            <a href="https://github.com/tcgronk/Quiz-App" target="_blank" rel="noopener noreferrer" >
+                              {" "}
+                              Technologies Used:
+                            </a>
+                            <li>Javascript</li>
+                            <li>jQuery</li>
+                            <li>HTML/CSS</li>
+                          </ul>
+                        </span>
+                      ) : null}
+                    </section>
+                    </>
+             
             ) : (
               <section className="projects">
                 <section>
                   <a
                     href="https://github.com/tcgronk/networth-client"
                     target="_blank"
+                    rel="noopener noreferrer" 
                   >
                     <img
                       src={fisave}
@@ -262,7 +394,8 @@ export default class Code extends Component {
                   <section className="description">
                     <b className="title">Finance</b>
 
-                    <p className="project-detail">
+                    <span className="project-detail">
+                        <br/>
                       This full stack project helps users track their networth
                       over time <br /> <br /> The PostgreSQL data is stored on
                       Heroku, and the app is deployed using Zeit.
@@ -276,13 +409,14 @@ export default class Code extends Component {
                         <li>Node.js</li>
                         <li>PostgreSQL</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
                 <section>
                   <a
                     href="https://github.com/tcgronk/sustainability"
                     target="_blank"
+                    rel="noopener noreferrer" 
                   >
                     <img
                       src={sustainability}
@@ -292,8 +426,8 @@ export default class Code extends Component {
                   </a>{" "}
                   <section className="description">
                     <b className="title">Eco-Database</b>
-
-                    <p className="project-detail">
+                    <br/>
+                    <span className="project-detail">
                       This full stack project helps users find sustainable
                       stores in a variety of categories. <br /> <br /> The
                       PostgreSQL data is stored on Heroku, and the app is
@@ -307,20 +441,21 @@ export default class Code extends Component {
                         <li>Node.js</li>
                         <li>PostgreSQL</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
                 <section>
                   <a
                     href="https://github.com/tcgronk/Noteful-App"
                     target="_blank"
+                    rel="noopener noreferrer" 
                   >
                     <img src={noteful} className="notephoto" alt="quiz-app" />{" "}
                   </a>
                   <section className="description">
                     <b className="title">Note Taking</b>
-
-                    <p className="project-detail">
+                    <br/>
+                    <span className="project-detail">
                       This was one of my first projects using React. Users can
                       add new folders and notes to the notetaking app. They can
                       also delete old notes.{" "}
@@ -332,20 +467,21 @@ export default class Code extends Component {
                         <li>Express server</li>
                         <li>Heroku</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
                 <section>
                   <a
                     target="_blank"
                     href="https://github.com/tcgronk/outdoorApp"
+                    rel="noopener noreferrer" 
                   >
                     <img src={ParkApp} className="parkphoto" alt="quiz-app" />
                   </a>{" "}
                   <section className="description">
                     <b className="title">External API</b>
-
-                    <p className="project-detail">
+                    <br/>
+                    <span className="project-detail">
                       This was my first experience implementing data from
                       multiple APIs. Users can search for their state or a state
                       they want to travel to. Then, they will be provided with a
@@ -360,16 +496,17 @@ export default class Code extends Component {
                         <li>jQuery</li>
                         <li>HTML/CSS</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
-                <section>
-                  <a href="https://github.com/tcgronk/Quiz-App" target="_blank">
+                <section className='LastSection'>
+                  <a href="https://github.com/tcgronk/Quiz-App" target="_blank" rel="noopener noreferrer" >
                     <img src={quizapp} className="winephoto" alt="quiz-app" />
                   </a>{" "}
                   <section className="description">
                     <b className="title">Quiz App</b>
-                    <p className="project-detail">
+                    <br/>
+                    <span className="project-detail">
                       This was one of my first projects. I have a personal
                       interest in studying the wine industry, so I created a
                       wine quiz to test wine industry knowledge.
@@ -379,134 +516,14 @@ export default class Code extends Component {
                         <li>jQuery</li>
                         <li>HTML/CSS</li>
                       </ul>
-                    </p>
+                    </span>
                   </section>
                 </section>
               </section>
             )
           }
         </MediaQuery>
-        <section className="second-section">
-          {this.state.showfinance ? (
-            <p className="project-detail-large">
-              <a href="https://networth-client.now.sh" target="_blank">
-                <h3>Fisave</h3>
-              </a>
-              This full stack project helps users track their networth over time{" "}
-              <br /> <br /> The PostgreSQL data is stored on Heroku, and the app
-              is deployed using Zeit.
-              <br /> <br />
-              <ul className="projectList">
-                <a
-                  href="https://github.com/tcgronk/networth-client"
-                  target="_blank"
-                >
-                  Technologies Used:
-                </a>
-                <br /> <br />
-                <li>D3 for data visualizations</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>HTML/CSS</li>
-                <li>Express.js</li>
-                <li>Node.js</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </p>
-          ) : null}
 
-          {this.state.showsustainable ? (
-            <p className="project-detail-large">
-              <a href="https://sustainability.now.sh" target="_blank">
-                <h3>Shop Sustainably</h3>
-              </a>
-              This full stack project helps users find sustainable stores in a
-              variety of categories. <br /> <br /> The PostgreSQL data is stored
-              on Heroku, and the app is deployed using Zeit.
-              <br /> <br />
-              <ul className="projectList">
-                <a
-                  href="https://github.com/tcgronk/sustainability"
-                  target="_blank"
-                >
-                  Technologies Used:
-                </a>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>HTML/CSS</li>
-                <li>Express.js</li>
-                <li>Node.js</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </p>
-          ) : null}
-          {this.state.shownotes ? (
-            <p className="project-detail-large">
-              <a href="https://noteful-app-pi-seven.now.sh" target="_blank">
-                <h3>Note Taking App</h3>
-              </a>
-              This was one of my first projects using React. Users can add new
-              folders and notes to the notetaking app. They can also delete old
-              notes. <br /> <br />
-              <ul className="projectList">
-                <a
-                  href="https://github.com/tcgronk/Noteful-App"
-                  target="_blank"
-                >
-                  Technologies Used:
-                </a>
-                <li>Javascript</li>
-                <li>HTML/CSS</li>
-                <li>React</li>
-                <li>Express server</li>
-                <li>Heroku</li>
-              </ul>
-            </p>
-          ) : null}
-          {this.state.showparks ? (
-            <p className="project-detail-large">
-              <a href="https://tcgronk.github.io/outdoorApp/" target="_blank">
-                <h3>National Park Trip Planner</h3>
-              </a>
-              This was my first experience implementing data from multiple APIs.
-              Users can search for their state or a state they want to travel
-              to. Then, they will be provided with a description of National
-              Parks in the state, the 3-day forecast in each park, and nearby
-              restaurants and attractions. I used the National Parks API for the
-              park information, Weatherbit API for the forecast, and the
-              Foursquare API for the nearby attractions. <br /> <br />
-              <ul className="projectList">
-                <a href="https://github.com/tcgronk/outdoorApp" target="_blank">
-                  Technologies Used:
-                </a>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>HTML/CSS</li>
-              </ul>
-            </p>
-          ) : null}
-          {this.state.showquiz ? (
-            <p className="project-detail-large">
-              <a href="https://tcgronk.github.io/Quiz-App/" target="_blank">
-                <h3>Wine Industry Quiz</h3>
-              </a>
-              This was one of my first projects. I have a personal interest in
-              studying the wine industry, so I created a wine quiz to test wine
-              industry knowledge.
-              <br />
-              <br />
-              <ul className="projectList">
-                <a href="https://github.com/tcgronk/Quiz-App" target="_blank">
-                  {" "}
-                  Technologies Used:
-                </a>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>HTML/CSS</li>
-              </ul>
-            </p>
-          ) : null}
-        </section>
       </section>
     );
   }

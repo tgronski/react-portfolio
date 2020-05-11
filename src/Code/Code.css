@@ -26,8 +26,15 @@
 .title:hover{
     text-decoration: line-through;
 }
+.LastSection{
+    margin-bottom: 15%;
+}
+ul{
+    padding: 0
+}
 .description{
     max-width: 200px;
+    margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;    
     font-family: 'Source Code Pro', monospace;

@@ -14,7 +14,7 @@ export default class Articles extends Component {
               matches ? (
                 <section className="articlePage">
                   <Link to="/leadership" className="buttonLink">
-                    <button class="backButton">
+                    <button className="backButton">
                       All <br />
                       Posts
                     </button>
@@ -67,7 +67,7 @@ export default class Articles extends Component {
                   <p className="credits">
                     Image is from Sandra at HerCreativeStudio.com
                   </p>
-                  <p class="content">
+                  <p className="content">
                     {Data.articles[0][i].content1}
                     <br />
                     <br />
