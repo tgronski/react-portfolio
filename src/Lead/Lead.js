@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../Engineers.css";
 import "./Lead.css";
 import leadership from "./leadership.jpg";
 import computersmall from "./computersmall.jpg";
