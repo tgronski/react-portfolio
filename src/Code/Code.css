@@ -1,68 +1,108 @@
-.projects{
-   background: white;
-   text-align: center;
+
+.networthphoto,.winephoto,.parkphoto,.sustainablephoto, .notephoto{
+    max-width: 150px;
+    height: 100px;
+    background-color: white;
+    object-fit: cover;
+    border: 6px solid rgb(1, 1, 114)
+
 }
-.winephoto{
-    max-width: 500px;
-    height: auto;
-}
-.parkphoto{
-    max-width: 450px;
-    height: auto;
-}
-.networthphoto{
-    max-width: 450px;
-    height: auto;
+.networthphoto:hover,.winephoto:hover,.parkphoto:hover,.sustainablephoto:hover, .notephoto:hover{
+    border: 6px solid rgb(229, 229, 250);
 }
 
 .title{
     color:black;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'Playfair Display', sans-serif;
+    text-decoration: none;
 }
 
-.descriptionColumn>a,.descriptionColumn>li{
-    
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    
-
-}
-
-.description>p{
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
-    
-}
-.projectList{
-    display: block;
-    padding: 0;
-}
 .description>a{
     color: black;
+    
+    text-decoration: none;
+}
+.title:hover{
+    text-decoration: line-through;
+}
+.description{
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;    
+    font-family: 'Source Code Pro', monospace;
+
 }
 .projectPage{   
-    display: flex; 
-    justify-content: center;
-    align-content: center;
-    width: 100%; 
     padding: 3%;
     height: auto;
-    margin-bottom: 15%;
-    
+    margin-bottom: 5%;  
+    background-color: rgb(229, 229, 250);
+
 }
-.projectsColumn{
-    display: flex;
-    flex-direction: column;
+.project-detail{
     text-align: center;
-    width: 78%; 
+    font-family: 'Source Code Pro', monospace;
+}
+.projectList{
+    padding: 0;
+    margin: 0;
+}
+.projects{
+    background: white;
+    text-align: center;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+.project-detail-large{
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    margin-right: auto;
+    margin-left:auto;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+.second-section{
+    background-color: white;
+    height: 375px
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent; 
+    border-top: 20px solid rgb(229, 229, 250);
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+@media only screen and (max-width: 799px) {
+    .projects{
+        flex-direction: column;
+    }
+
 }
 
-.winephotoSmall,.parkphotoSmall{
-    max-width: 275px;
-    height: auto;
+
+@media only screen and (min-width: 800px) {
+    .projects{
+        flex-direction: row;
+    }
+.project-detail{
+    display: none;
+}
+
+}
+
+@media only screen and (min-width: 400px) and (max-width:799px) {
+    .description{
+        width: 350px;
+    }
 }

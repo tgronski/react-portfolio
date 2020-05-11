@@ -10,7 +10,7 @@
     color: white
 }
 .About-description{
-    background-color:rgb(230, 230, 240);
+    background-color:rgb(229, 229, 250);
     width: 100%;
     height:auto;
     margin-bottom: 8%;
@@ -19,6 +19,7 @@
     font-size: 20px;
     color: rgb(1, 1, 114);
     display: flex;
+    justify-content: space-evenly;
 }
 .personal-logo{
 
