@@ -22,6 +22,8 @@ class About extends React.Component {
 
         </section>
         </section>
+        <br/>
+       <br/>
         </section>
     }
 }

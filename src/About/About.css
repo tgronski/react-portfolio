@@ -1,7 +1,7 @@
 .About{
     text-align: center;
-    background-color:rgb(230, 230, 240) ;
-    margin-bottom: 15px
+    ;
+    
 }
 
 .About-me{
@@ -10,6 +10,7 @@
     color: white
 }
 .About-description{
+    background-color:rgb(230, 230, 240);
     width: 100%;
     height:auto;
     margin-bottom: 8%;
