@@ -5,7 +5,6 @@ import "../App/App.css";
 import MediaQuery from "react-responsive";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { slide as Menu } from "react-burger-menu";
 
 export default class Nav extends Component {
   constructor(props) {
@@ -88,8 +87,6 @@ export default class Nav extends Component {
                         </ul>
                       ) : null}
                     </li>
-                    {/* <li ><Link className='routerLink' to='/engineers' onClick={(event)=>this.setEngineerState(event)}><h2 className='a' >Engineers</h2></Link></li> */}
-                    {/* <li ><Link className='routerLink' to='/tech' ><h2 className='a'>Tech</h2></Link></li> */}
                   </ul>
                 </span>
               </nav>
@@ -119,10 +116,6 @@ export default class Nav extends Component {
                         <Link className="menu-item" to="/leadership">
                           <h2 className="a">Leadership</h2>{" "}
                         </Link>
-                        {/* <ul >
-                            <li onClick={this.handleUnDrop}><Link className='menu-item'  to='/leadership/1' ><h3>Management</h3></Link></li>
-                            <li onClick={this.handleUnDrop}><Link className='menu-item' to='/leadership/2' ><h3>Code Resources</h3></Link></li>
-                            </ul> */}
                       </li>
                     </ul>
                   ) : null}

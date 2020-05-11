@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../Engineers.css";
 import quizapp from "./wine-icon.png";
 import "./Code.css";
 import ParkApp from "./travel-icon.png";

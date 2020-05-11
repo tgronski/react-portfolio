@@ -1,0 +1,14 @@
+.CodingJourney{
+background-color: rgb(229, 229, 250);
+height: 70vh;
+}
+
+.CodingJourney-bio{
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(1, 1, 114);
+}

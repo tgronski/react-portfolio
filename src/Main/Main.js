@@ -5,13 +5,11 @@ import citysmall from "./citysmall.jpeg";
 import oceanbeachsmall from "./oceanbeachsmall.jpeg";
 import Learn from "./Learn";
 import Img from "react-image";
-import LazyLoad from "react-lazyload";
 import MediaQuery from "react-responsive";
 
 class Main extends React.Component {
   render() {
     return (
-      <LazyLoad>
         <MediaQuery minDeviceWidth={700}>
           {matches =>
             matches ? (
@@ -49,7 +47,6 @@ class Main extends React.Component {
             )
           }
         </MediaQuery>
-      </LazyLoad>
     );
   }
 }

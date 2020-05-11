@@ -4,7 +4,6 @@ import leadership from "./leadership.jpg";
 import computersmall from "./computersmall.jpg";
 import { Link } from "react-router-dom";
 import Img from "react-image";
-import LazyLoad from "react-lazyload";
 import MediaQuery from "react-responsive";
 
 export default class Lead extends Component {
@@ -25,7 +24,6 @@ export default class Lead extends Component {
 
   render() {
     return (
-      <LazyLoad offset={100} height={300}>
         <MediaQuery minDeviceWidth={700}>
           {matches =>
             matches ? (
@@ -126,7 +124,6 @@ export default class Lead extends Component {
             )
           }
         </MediaQuery>
-      </LazyLoad>
     );
   }
 }

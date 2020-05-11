@@ -7,12 +7,11 @@ import Code from '../Code/Code'
 import Lead from '../Lead/Lead'
 import './App.css';
 import Articles from '../Lead/Articles'
+import CodingJourney from '../CodingJourney/CodingJourney';
 
 
 
 export default class App extends Component{
-
-  
 
   renderNavRoutes(){
     
@@ -23,6 +22,7 @@ export default class App extends Component{
       <Route path= "/tech" component={Nav} />
       <Route path= "/leadership" component={Nav} />
       <Route path= "/code" component={Nav} />
+      <Route path= "/about" component={Nav} />
       </span>
     )
   }
@@ -36,9 +36,9 @@ export default class App extends Component{
                         component={()=><Home/>}
                     />
       ))}
-      
+      <Route exact path= "/about" component={()=><CodingJourney/>} />
       <Route exact path= "/leadership" component={()=><Lead />} />
-      <Route path= "/code" component={()=><Code/>} />
+      <Route exact path= "/code" component={()=><Code/>} />
 
       {['/leadership/:article'].map(path =>(
         <Route  
@@ -64,8 +64,6 @@ export default class App extends Component{
     <div className="App" >
       <header className="App-header">
       
-      <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"/>
-      {/* <Link className='nav' to='/' ><h1  >tess gronski</h1></Link>   */}
       <nav>{this.renderNavRoutes()}</nav>
        
       </header>

@@ -15,8 +15,13 @@
     color: rgb(1, 1, 114);
 }
 
-.bio{
+.bio,.bio>a{
     font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    font-size: 18px;
+}
+.bio>a{
+    color: black
 }
 .page{
     height: 100vh;
