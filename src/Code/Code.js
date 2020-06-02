@@ -92,20 +92,23 @@ export default class Code extends Component {
                 <>
               <section className="projects">
                 <section>
-                  <a
+                  {/* <a
                     href="https://github.com/tcgronk/networth-client"
                     target="_blank" rel="noopener noreferrer" 
-                  >
+                  > */}
+                  <section onClick={this.handleClickFinance}>
                     <img
                       src={fisave}
                       className="networthphoto"
                       alt="networth-app"
                     />
-                  </a>{" "}
+                  {/* </a> */}
+                  {" "}
                   <section className="description">
-                    <b onClick={this.handleClickFinance} className="title">
+                    <b  className="title">
                       Finance
                     </b>
+                    </section>
                     {this.state.showfinance ? (
                       <div className="arrow-down"></div>
                     ) : null}
@@ -127,21 +130,24 @@ export default class Code extends Component {
                   </section>
                 </section>
                 <section>
-                  <a
+                  {/* <a
                     href="https://github.com/tcgronk/sustainability"
                     target="_blank"
                     rel="noopener noreferrer" 
-                  >
+                  > */}
+                  <section onClick={this.handleClickSustainable}>
                     <img
                       src={sustainability}
                       className="sustainablephoto"
                       alt="sustainable-app"
                     />
-                  </a>{" "}
+                  {/* </a> */}
+                  {" "}
                   <section className="description">
-                    <b onClick={this.handleClickSustainable} className="title">
+                    <b  className="title">
                       Eco-Database
                     </b>
+                    </section>
                     {this.state.showsustainable ? (
                       <div className="arrow-down"></div>
                     ) : null}
@@ -163,17 +169,19 @@ export default class Code extends Component {
                   </section>
                 </section>
                 <section>
-                  <a
+                  {/* <a
                     href="https://github.com/tcgronk/Noteful-App"
                     target="_blank"
                     rel="noopener noreferrer" 
-                  >
+                  > */}
+                  <section onClick={this.handleClickNotes}>
                     <img src={noteful} className="notephoto" alt="quiz-app" />{" "}
-                  </a>
+                  {/* </a> */}
                   <section className="description">
-                    <b className="title" onClick={this.handleClickNotes}>
+                    <b className="title" >
                       Note Taking
                     </b>
+                    </section>
                     {this.state.shownotes ? (
                       <div className="arrow-down"></div>
                     ) : null}
@@ -183,6 +191,7 @@ export default class Code extends Component {
                       also delete old notes.{" "}
                       <ul className="projectList">
                         Technologies Used:
+                        <br/>
                         <li>Javascript</li>
                         <li>HTML/CSS</li>
                         <li>React</li>
@@ -193,17 +202,20 @@ export default class Code extends Component {
                   </section>
                 </section>
                 <section>
-                  <a
+                  {/* <a
                     target="_blank"
                     href="https://github.com/tcgronk/outdoorApp"
                     rel="noopener noreferrer" 
-                  >
+                  > */}
+                  <section onClick={this.handleClickParks}>
                     <img src={ParkApp} className="parkphoto" alt="quiz-app" />
-                  </a>{" "}
+                  {/* </a> */}
+                  {" "}
                   <section className="description">
-                    <b onClick={this.handleClickParks} className="title">
+                    <b  className="title">
                       External API
                     </b>
+                    </section>
                     {this.state.showparks ? (
                       <div className="arrow-down"></div>
                     ) : null}
@@ -226,13 +238,16 @@ export default class Code extends Component {
                   </section>
                 </section>
                 <section>
-                  <a href="https://github.com/tcgronk/Quiz-App" target="_blank" rel="noopener noreferrer" >
+                  <section onClick={this.handleClickQuiz}>
+                  {/* <a href="https://github.com/tcgronk/Quiz-App" target="_blank" rel="noopener noreferrer" > */}
                     <img src={quizapp} className="winephoto" alt="quiz-app" />
-                  </a>{" "}
+                  {/* </a> */}
+                  {" "}
                   <section className="description">
-                    <b onClick={this.handleClickQuiz} className="title">
+                    <b  className="title">
                       Quiz App
                     </b>
+                    </section>
                     {this.state.showquiz ? (
                       <div className="arrow-down"></div>
                     ) : null}
