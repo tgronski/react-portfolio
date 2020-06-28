@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import Home from '../Home/Home'
@@ -17,18 +17,18 @@ export default class App extends Component{
     
     return(
       <span>
-      <Route exact path='/' component={()=><Nav pageWrapId={"page-wrap"} outerContainerId={"App"}/>}/>
-      <Route path='/home' component={Nav}/>
-      <Route path= "/tech" component={Nav} />
-      <Route path= "/leadership" component={Nav} />
-      <Route path= "/code" component={Nav} />
-      <Route path= "/about" component={Nav} />
+      <Route path='/' component={()=><Nav/>}/>
       </span>
     )
   }
   renderMainPage(){
     return(
       <span>
+        <Route path='/' component={() => { 
+     window.location.href = 'https://personal-portfolio-sigma.now.sh/home'; 
+     return null;
+}}/>
+       {/* <Switch>
       {['/', '/home'].map(path => (
                     <Route
                         exact
@@ -39,13 +39,15 @@ export default class App extends Component{
       ))}
       <Route exact path= "/about" component={()=><CodingJourney/>} />
       <Route exact path= "/leadership" component={()=><Lead />} />
-      <Route exact path= "/code" component={()=><Code/>} />
 
       {['/leadership/:article'].map(path =>(
         <Route 
         exact
         path={path} key={path} component={Articles}/>
         ))}
+        
+        <Route path='/' component={Home}/>
+        </Switch> */}
       </span>
     )
   }
