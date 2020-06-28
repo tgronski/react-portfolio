@@ -63,11 +63,11 @@ export default class App extends Component{
   return (
    
     <div className="App" >
-      <header className="App-header">
+      {/* <header className="App-header">
       
       <nav>{this.renderNavRoutes()}</nav>
        
-      </header>
+      </header> */}
       
 
       <div className='body' id="page-wrap">
